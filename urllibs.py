@@ -7,6 +7,7 @@ def main():
     print('Result code: {0}'.format(result.status))
 
     print('Headers ------------')
+    print(result.getheaders())
 
     print('Returned data ------')
 
