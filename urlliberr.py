@@ -6,7 +6,7 @@ def main():
     # url = 'https://no-such-server.org'
 
     result = urllib.request.urlopen(url)
-    print('Result code: {0}'.format(resutl.status))
+    print('Result code: {0}'.format(result.status))
     if (result.getcode() == 200):
         print(result.read().decode('UTF-8'))
 
