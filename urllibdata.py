@@ -11,7 +11,7 @@ def main():
 
     data = urllib.parse.urlencode(args)
 
-    result = urllib.request.urlopen(url)
+    result = urllib.request.urlopen(url + '?' + data)
 
     print('Result code: {0}'.format(result.status))
 
