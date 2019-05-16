@@ -4,8 +4,8 @@ from urllib.error import HTTPError
 
 def main():
     # url = 'https://httpbin.org/html'
-    url = 'https://httpbin.org/status/404'
-    # url = 'https://no-such-server.org'
+    # url = 'https://httpbin.org/status/404'
+    url = 'https://no-such-server.org'
 
     try:
         result = urllib.request.urlopen(url)
