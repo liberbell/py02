@@ -3,6 +3,10 @@ import urllib.request
 def main():
     url = 'https://httpbin.org/get'
 
+    args = {
+        "name": "Jhon Doe",
+        "is_author": True
+    }
 
     result = urllib.request.urlopen(url)
 
