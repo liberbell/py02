@@ -11,7 +11,7 @@ def printResult(resData):
     print('\n')
 
     print('Headers ------------')
-    print(resData.Headers)
+    print(resData.headers)
     print('\n')
 
     print('Returned data ------')
