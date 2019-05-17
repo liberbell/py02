@@ -1,4 +1,4 @@
-import reqests
+import requests
 
 def main():
     url = 'https://httpbin.org/xml'
