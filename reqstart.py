@@ -9,6 +9,11 @@ def printResult(resData):
     print('\n')
 
     print('Headers ------------')
+    print(resData.Headers)
+    print('\n')
+
+    print('Returned data ------')
+    print(resData.contents)
 
 if __name__ == '__main__':
     main()
