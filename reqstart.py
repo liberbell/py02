@@ -15,7 +15,7 @@ def printResult(resData):
     print('\n')
 
     print('Returned data ------')
-    print(resData.contents)
+    print(resData.content)
 
 if __name__ == '__main__':
     main()
