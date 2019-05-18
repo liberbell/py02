@@ -11,7 +11,7 @@ def main():
         "key2": "value2",
         "key3": "value3"
     }
-    result = requests.get(url)
+    result = requests.get(url, params=dataValues)
     printResult(result)
 
 def printResult(resData):
