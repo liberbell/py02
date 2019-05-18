@@ -3,9 +3,9 @@ import requests
 def main():
     url = 'https://httpbin.org/xml'
     result = requests.get(url)
-    printResult(result)
+    # printResult(result)
 
-    url = 'https://httpbin.org/xml'
+    url = 'https://httpbin.org/get'
     dataValues = {
         "key1": "value1",
         "key2": "value2",
