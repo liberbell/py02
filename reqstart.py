@@ -18,7 +18,7 @@ def main():
     headerValues = {
         "User-Agent": "Neo Tokyo App / 1.0.0"
     }
-    result = requests.post(url, headers=headerValues)
+    result = requests.get(url, headers=headerValues)
     printResult(result)
 
 def printResult(resData):
