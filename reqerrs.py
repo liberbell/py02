@@ -1,5 +1,5 @@
 import requests
-from requests import HTTPError
+from requests import HTTPError, Timeout
 
 def main():
     # url = 'https://httpbin.org/status/404'
