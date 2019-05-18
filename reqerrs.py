@@ -1,4 +1,5 @@
 import requests
+from requests import HTTPError
 
 def main():
     url = 'https://httpbin.org/status/404'
