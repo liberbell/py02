@@ -12,6 +12,13 @@ def main():
         "key3": "value3"
     }
     result = requests.post(url, data=dataValues)
+    # printResult(result)
+
+    url = 'https://httpbin.org/get'
+    headerValues = {
+        "User-Agent": "Neo Tokyo App / 1.0.0"
+    }
+    result = requests.post(url, headers=headerValues)
     printResult(result)
 
 def printResult(resData):
