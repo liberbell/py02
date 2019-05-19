@@ -1,10 +1,11 @@
 import json
+from json import JSONDecoder
 
 def main():
     jsonStr = '''{
         "sandwich": "Reuben",
         "toasted": true,
-        "toppings: [
+        "toppings": [
             "Thousand Island Dressing",
             "Sauerkraut",
             "Pickles"
@@ -12,7 +13,12 @@ def main():
         "price": 8.99
     }'''
 
-    data = json.loads(jsonStr)
+    try:
+        data = json.loads(jsonStr)
+    except JSONDecoder as err:
+        print('Woops, Json Decoding err:')
+        print(err.msg)
+        print(err.lineno, err.colno)
 
     print('Sandwich: ' + data['sandwich'])
     if (data['toasted']):
