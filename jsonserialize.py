@@ -11,7 +11,10 @@ def main():
         "price": 8.99
     }
 
+    jsonStr = json.dumps(pythonData)
+
     print('Json data: -------------')
+    print(jsonStr)
 
 if __name__ == '__main__':
     main()
