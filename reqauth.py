@@ -1,6 +1,6 @@
 import requests
 from requests import HTTPError, Timeout
-form request.auth import HTTPBasicAuth
+form requests.auth import HTTPBasicAuth
 
 def main():
     # url = 'https://httpbin.org/status/404'
