@@ -1,9 +1,14 @@
 import requests
 from requests import HTTPError, Timeout
+form request.auth import HTTPBasicAuth
 
 def main():
     # url = 'https://httpbin.org/status/404'
-    url = 'https://httpbin.org/basic-auth'
+    url = 'https://httpbin.org/basic-auth/root/pass'
+
+    myCreds = HTTPBasicAuth('root', 'pass')
+
+    result = requests.get(url, auth=myCreds)
 
     printResult(result)
     # try:
