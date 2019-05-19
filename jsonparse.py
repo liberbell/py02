@@ -1,4 +1,4 @@
-
+import json
 
 def main():
     jsonStr = '''{
@@ -11,4 +11,3 @@ def main():
         ],
         "price": 8.99
     }'''
-    
