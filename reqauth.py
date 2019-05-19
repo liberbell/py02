@@ -8,7 +8,7 @@ def main():
 
     myCreds = HTTPBasicAuth('root', 'pass')
 
-    result = requests.get(url, auth=myCreds)
+    result = requests.get(url, auth=('root', 'pass'))
 
     printResult(result)
     # try:
