@@ -1,16 +1,15 @@
 import json
 
 def main():
-    jsonStr = '''{
+    pythonData = {
         "sandwich": "Reuben",
-        "toasted": true,
-        "toppings": [
-            "Thousand Island Dressing",
-            "Sauerkraut",
-            "Pickles"
-        ],
+        "toasted": True,
+        "toppings": ["Thousand Island Dressing",
+                     "Sauerkraut",
+                     "Pickles"
+                     ],
         "price": 8.99
-    }'''
+    }
 
     data = json.loads(jsonStr)
 
