@@ -4,11 +4,11 @@ def main():
     jsonStr = '''{
         "sandwich": "Reuben",
         "toasted": true,
-        "toppings": [
+        "toppings: [
             "Thousand Island Dressing",
             "Sauerkraut",
             "Pickles"
-        ]
+        ],
         "price": 8.99
     }'''
 
