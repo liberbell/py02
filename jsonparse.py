@@ -3,7 +3,7 @@ import json
 def main():
     jsonStr = '''{
         "sandwich": "Reuben",
-        "toasted": True,
+        "toasted": true,
         "toppings": [
             "Thousand Island Dressing",
             "Sauerkraut",
