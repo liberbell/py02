@@ -13,8 +13,8 @@ def main():
     result = requests.get(url)
     print(result.text)
 
-    print('There were {0} slides elements.'.format(result.slidecount))
-    print('There were {0} item elements.'.format(result.itemcount))
+    print('There were {0} slides elements.'.format(handler.slidecount))
+    print('There were {0} item elements.'.format(handler.itemcount))
 
 if __name__ == '__main__':
     main()
