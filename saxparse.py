@@ -7,3 +7,13 @@ class MycontentHandler(xml.sax.ContentHandler):
         self.itemcount = 0
 
 def main():
+    handler = MycontentHandler()
+
+    url = 'https://httpbin.org/xml'
+    result = requests.get(url)
+
+    print('There were {0} slides elements.'.format(result.slidecount))
+    print('There were {0} item elements.'.format(result.itemcount))
+
+if __name__ == '__main__':
+    main()
