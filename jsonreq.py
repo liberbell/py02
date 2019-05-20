@@ -8,7 +8,7 @@ def main():
     dataobj = result.json()
     print(json.dumps(dataobj, indent=4))
 
-    print(list(dataobj.key))
+    print(list(dataobj.keys()))
 
 
 if __name__ == '__main__':
