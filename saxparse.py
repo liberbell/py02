@@ -6,6 +6,12 @@ class MycontentHandler(xml.sax.ContentHandler):
         self.slidecount = 0
         self.itemcount = 0
 
+    def startDocument(self):
+        print('About to start!')
+
+    def endDocument(self):
+        print('Finishing up!')
+
 def main():
     handler = MycontentHandler()
 
