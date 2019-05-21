@@ -9,6 +9,10 @@ class MycontentHandler(xml.sax.ContentHandler):
     def startElement(self, tagName, attrs):
         if tagName == 'slideshow':
             print('Slideshow title: ' + attrs['title'])
+        elif tagName == 'slide':
+            self.slidecount += 1
+        elif tagName == 'item':
+            self.itemcount += 1
 
     def startDocument(self):
         print('About to start!')
