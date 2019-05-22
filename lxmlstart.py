@@ -18,7 +18,7 @@ def main():
     newSlide.text = 'This is a new slide'
 
     slidecount = len(doc.findall('slide'))
-    itemcount = len(doc.findall('item'))
+    itemcount = len(doc.findall('.//item'))
 
     print('There are {0} slide elements.'.format(slidecount))
     print('There are {0} item elements.'.format(itemcount))
