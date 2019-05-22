@@ -21,7 +21,7 @@ def main():
     itemcount = len(doc.findall('item'))
 
     print('There are {0} slide elements.'.format(slidecount))
-
+    print('There are {0} item elements.'.format(itemcount))
 
 
 if __name__ == '__main__':
