@@ -11,6 +11,8 @@ def main():
     print(doc.tag)
     print(doc.attrib['title'])
 
+    for elem in doc.findall('slide'):
+        print(elem.tag)
 
 if __name__ == '__main__':
     main()
