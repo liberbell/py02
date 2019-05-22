@@ -5,7 +5,7 @@ def main():
     url = 'https://httpbin.org/xml'
     resutl = requests.get(url)
 
-    doc = etree.fromstrint(result.content)
+    doc = etree.fromstring(result.content)
     print(result.text)
 
 
