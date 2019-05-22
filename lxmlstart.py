@@ -3,7 +3,7 @@ from lxml import etree
 
 def main():
     url = 'https://httpbin.org/xml'
-    resutl = requests.get(url)
+    result= requests.get(url)
 
     doc = etree.fromstring(result.content)
     print(result.text)
