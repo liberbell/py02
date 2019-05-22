@@ -8,6 +8,9 @@ def main():
     doc = etree.fromstring(result.content)
     print(result.text)
 
+    print(doc.tag)
+    print(doc.attrib['title'])
+
 
 if __name__ == '__main__':
     main()
