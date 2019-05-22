@@ -14,5 +14,15 @@ def main():
     for elem in doc.findall('slide'):
         print(elem.tag)
 
+    newSlide = etree.SubElement(doc, 'slide')
+    newSlide.text = 'This is a new slide'
+
+    slidecount = len(doc.findall('slide'))
+    itemcount = len(doc.findall('item'))
+
+    print('There are {0} slide elements.'.format(slidecount))
+
+
+
 if __name__ == '__main__':
     main()
